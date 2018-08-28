@@ -1,5 +1,5 @@
 # crispy-dollop
-* [Mind Map](https://dplusic.github.io/crispy-dollop/)
+[Mind Map](https://dplusic.github.io/crispy-dollop/)
 
 ## Category 1
 
