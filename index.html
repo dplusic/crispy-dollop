@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>crispy-dollop</title>
+
+    <link rel="stylesheet" href="assets/view.mindmap.css" />
+
+    <style>
+        html,
+        body,
+        #mindmap {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+    <script src="assets/d3.js"></script>
+    <script src="assets/d3-flextree.js"></script>
+    <script src="assets/view.mindmap.js"></script>
+
+    <script>
+        d3.json("assets/README.json", (error, data) => {
+            if (error) {
+                throw error;
+            }
+
+            markmap('svg#mindmap', data, {
+                preset: 'colorful',
+                linkShape: 'diagonal' // or bracket
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <svg id="mindmap"></svg>
+</body>
+
+</html>
